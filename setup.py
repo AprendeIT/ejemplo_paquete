@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""ejeplo_paquete module can be installed and configured from here"""
+"""ejemplo_paquete module can be installed and configured from here"""
 
 
 
@@ -104,8 +104,6 @@ setup(
     keywords=['ejemplo_paquete','ejemplo','paquete','package','example'],
     install_requires=[
         'requests',
-        'json'
-        #  'fabric==2.4.0',
     ],
     setup_requires=['requests'],
     tests_require=[
@@ -115,7 +113,7 @@ setup(
         'pytest-dependency',
     ],
     entry_points={
-        'console_scripts': ['ejemplo_paquete=ejemplo_paquete.ejemplo_paquete:main'],
+        'console_scripts': ['ejemplo_paquete=ejemplo_paquete.ejemplo_paquete_mod:main'],
     },
     classifiers=[
         'Development Status :: 4 - Beta',

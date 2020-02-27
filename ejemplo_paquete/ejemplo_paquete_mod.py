@@ -2,7 +2,7 @@ import requests
 import json
 
 def get_my_ip():
-    url = 'https://api.ipify.org?format=json'
+    url = 'https://api.myip.com'
     r = requests.get(url)
     dato = json.loads(r.text)
     return dato['ip']
